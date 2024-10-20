@@ -1,6 +1,6 @@
 import { Component, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-
+import '../src/pages/ForgetPass/Forgetpass.css';
 import HomeScreen from './pages/HomeScreen'
 import Login from './pages/login';
 import Register from './pages/register';
