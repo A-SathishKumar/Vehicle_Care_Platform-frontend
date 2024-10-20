@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, Link, Navigate } from 'react-router-dom';
 import Navbar from '../../Components/Navbar/Navbar';
 import { SendOTPAPI,VerifyOTPAPI,ResetPasswordAPI } from '../../apis';
-import './ForgetPass.css';
+//import './ForgetPass.css';
 
 function ForgotPassword() {
   const [step, setStep] = useState(1); // Track the current step (1: Email, 2: OTP, 3: Reset Password)
