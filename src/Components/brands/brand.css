@@ -1,0 +1,20 @@
+.vcp__brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.vcp__brand div {
+    flex: 1;
+    max-width: 200px;
+    min-width: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vcp__brand img{
+    width: 70px;
+    height: 70px;
+}

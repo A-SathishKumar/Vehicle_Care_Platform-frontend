@@ -1,0 +1,418 @@
+.status-badge {
+    padding: 2px 2px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .status-badge.false {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  .status-badge.true {
+    background-color: #28a745;
+    color: white;
+  }
+
+/* General Styling */
+/* 
+  /* Admin - list of user*/
+
+  .admin-panel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-panel h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .user-table thead {
+    background-color: #f2f2f2;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .user-table th {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .user-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .user-table button {
+    padding: 8px 12px;
+    background-color: #dc3545; /* Red color for remove button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .user-table button:hover {
+    background-color: #c82333; 
+  }
+  
+  @media (max-width: 720px) {
+    .admin-panel {
+      padding: 1rem; 
+    }
+  
+    .user-table th,
+    .user-table td {
+      padding: 10px; 
+      font-size: 0.9rem; 
+    }
+  
+    .user-table button {
+      padding: 6px 10px; 
+      font-size: 0.8rem; 
+    }
+
+    .user-table {
+      display: block; 
+      overflow-x: auto; 
+      white-space: nowrap; 
+    }
+  
+    .user-table th,
+    .user-table td {
+      padding: 10px;
+      font-size: 0.9rem;
+      text-align: center; /* Center align content */
+      display: inline-block; /* Keep cells inline */
+    }
+  
+    .user-table th {
+      background-color: #f2f2f2; /* Header background color */
+      font-weight: bold; /* Bold header text */
+    }
+  
+    .user-table button {
+      width: auto; /* Adjust button width */
+      font-size: 0.8rem;
+      padding: 6px 10px;
+      margin-top: 5px; /* Space above button */
+    }
+
+  }
+  
+  @media (min-width: 720px) and (max-width: 1200px) {
+    .admin-panel {
+      padding: 1.5rem; /* Adjust padding for medium screens */
+    }
+  
+    .user-table th,
+    .user-table td {
+      padding: 10px; /* Adjust padding for medium screens */
+      font-size: 1rem; /* Maintain font size */
+    }
+  
+    .user-table button {
+      padding: 8px 12px; /* Maintain button size */
+      font-size: 0.9rem; /* Maintain button font size */
+    }
+
+    .user-table th,
+    .user-table td {
+      padding: 8px; /* Further reduce padding */
+      font-size: 0.85rem; /* Smaller font size for very small devices */
+    }
+  
+    .user-table button {
+      font-size: 0.7rem; /* Even smaller button text */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*Admin - List of Booking*/
+  
+  .admin-bookings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-bookings-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .search-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-sort-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 1rem;
+  }
+  
+  .search-sort-container .sort-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-sort-container .sort-button:hover {
+    background-color: #45a049;
+  }
+  
+  .bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .bookings-table th,
+  .bookings-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .bookings-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .bookings-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .bookings-table button {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .bookings-table button:hover {
+    background-color: #0056b3;
+  }
+  
+  .bookings-table .completed {
+    color: #28a745;
+    font-weight: bold;
+  }
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .search-sort-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .search-sort-container input {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .search-sort-container .sort-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .bookings-table {
+      display: block; /* Block display for scrolling */
+      overflow-x: auto; /* Enable horizontal scroll */
+      white-space: nowrap; /* Prevent wrapping of table cells */
+    }
+  
+    .bookings-table th,
+    .bookings-table td {
+      padding: 10px;
+      font-size: 0.9rem;
+      text-align: center; /* Center align content */
+      display: inline-block; /* Keep cells inline */
+    }
+  
+    .bookings-table th {
+      background-color: #f2f2f2; /* Header background color */
+      font-weight: bold; /* Bold header text */
+    }
+  
+    .bookings-table button {
+      width: auto; /* Adjust button width */
+      font-size: 0.8rem;
+      padding: 6px 10px;
+      margin-top: 5px; /* Space above button */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-bookings-container {
+      padding: 1rem; /* Reduce padding for very small screens */
+    }
+  
+    .admin-bookings-container h2 {
+      font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+  
+    .bookings-table th,
+    .bookings-table td {
+      padding: 8px; /* Further reduce padding */
+      font-size: 0.85rem; /* Smaller font size for very small devices */
+    }
+  
+    .bookings-table button {
+      font-size: 0.7rem; /* Even smaller button text */
+    }
+  }
+  @media (max-width: 1200px) {
+    .admin-bookings-container {
+      padding: 1rem; /* Reduce padding for very small screens */
+    }
+  
+    .admin-bookings-container h2 {
+      font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+  
+    .bookings-table th,
+    .bookings-table td {
+      padding: 8px; /* Further reduce padding */
+      font-size: 0.85rem; /* Smaller font size for very small devices */
+    }
+  
+    .bookings-table button {
+      font-size: 0.7rem; /* Even smaller button text */
+    }
+  }  
+
+  /*Notification */
+
+  .notification-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .notification-form-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-input{
+    width: 100%;
+    /* height: 500px; */
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  .form-textarea {
+    width: 100px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #007bff; /* Blue color on focus */
+    outline: none; 
+  }
+  
+  .form-textarea {
+    height: 300px; /* Fixed height for the textarea */
+    width: 100%;
+     /* Prevent resizing */
+  }
+  
+  .btn-submit {
+    padding: 12px 20px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 720px) {
+    .notification-form {
+      padding: 1.5rem; /* Reduced padding for mobile */
+    }
+  
+    .form-input,
+    .form-textarea,
+    .btn-submit {
+      font-size: 0.9rem; /* Slightly smaller font size for mobile */
+    }
+  }
+  

@@ -1,0 +1,195 @@
+/* FAQ Section */
+.faq-section {
+    padding: 2rem;
+    background-color: #040C18;
+    color: #fbf6f6;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: var(--font-family);
+  }
+  
+  .faq-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns the items at the top */
+    
+  }
+  
+  .faq-left {
+    flex: 2; /* FAQ items take up 2/3 of the space */
+    padding-right: 2rem;
+    color: white;
+    font-family: var(--font-family);
+  }
+  
+  .faq-right {
+    flex: 1; /* SVG takes up 1/3 of the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq-right {
+  flex: 1; /* Card takes up 1/3 of the space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .contact-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-card h2 {
+    font-size: 1.8rem;
+    color: #0033cc;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .contact-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .book-appointment-btn {
+    background-color: #0033cc;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .book-appointment-btn:hover {
+    background-color: #002299;
+    transform: scale(1.05);
+  }
+    
+  
+  .faq-right img {
+    height: 500px;
+    width: 600px;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #f7f5f5;
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    font-family: var(--font-family);
+  }
+  .faq-answer {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  
+  .faq-answer p {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fbfafa;
+    font-family: var(--font-family);
+  }
+  
+  .faq-item span {
+    font-size: 1.5rem;
+    color: #0033cc;
+    transition: transform 0.2s ease;
+  }
+  
+  .faq-item:hover span {
+    transform: scale(1.4);
+  }
+
+  /* Mobile Styles */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 1rem;
+  }
+
+  .faq-container {
+    flex-direction: column; /* Stack the left and right sections */
+  }
+
+  .faq-left {
+    padding-right: 0; /* Remove padding */
+    margin-bottom: 1rem; /* Add space below */
+  }
+
+  .faq-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; /* Add space below */
+  }
+
+  .contact-card {
+    width: 100%; /* Full width on mobile */
+    max-width: none; /* Remove max-width restriction */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .contact-card h2 {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+
+  .contact-card h3 {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+
+  .faq-item {
+    padding: 0.5rem 0; /* Adjust padding */
+  }
+
+  .faq-question {
+    font-size: 1.1rem; /* Adjust font size for mobile */
+  }
+
+  .faq-answer p {
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+}
+
+  
